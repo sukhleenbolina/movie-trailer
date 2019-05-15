@@ -1,18 +1,61 @@
-/* My Awesome Styles */
-
-/* Diagnostic Styling 
-* Change Background Color 
-* Outline Elements
- */
-
- * {
-     outline: 1px dotted  blue;
- }
 
 
- video {
-     border: 10px solid red;
-     /*  Kludge */
-     width: 100%;
-     height: 100%;
- }
+body {
+    font-family: 'Boogaloo', san-serif;
+    font-size: 50px;
+    background-image: url("https://images6.alphacoders.com/327/thumb-1920-327182.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh
+  }
+  
+  h1 {
+    width: 100vw;
+    height: 10vh;
+    color: #f28e41;
+    text-align: center;
+  }
+  
+  .center {
+    margin: 0 auto; width: 800px;
+  }
+  
+  
+  video {
+    max-width: 800px;
+    box-shadow: 2px 2px 4px 5px #000;
+  }
+  
+  
+  .trees {
+  animation: slideIn .8s linear;
+  }
+  
+  
+  @keyframe slideIn {
+    0% {transform: translateY(400px);
+    animation-timing-function: ease-out;
+    }
+    60% {transform: translateY(-50px);
+    animation-timing-function: ease-in;
+    }
+    80% {transform: translateY(10px);
+    animation-timing-function: ease-out;
+    }
+    100% {transform: translateY(0px);
+    animation-timing-function: ease-in;
+    }
+  }
+  
+  .characters {
+    display: flex;
+    position: absolute;
+    bottom: -500px;
+  }
+  
+  #ted, #lorax, #audrey, #gma, #onceler, #ohare {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: white;
+  }
