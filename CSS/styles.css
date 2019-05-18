@@ -1,19 +1,24 @@
 /* https://cdn.plyr.io/3.3.12/plyr.css */
 body {
+  font-family: 'Boogaloo', san-serif;
+  font-size: 40px;
   background-image: url("https://raw.githubusercontent.com/sukhleenbolina/movie-trailer/master/assets/lorax_background.png");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
+  
 }
 
-.name {
-  font-family: 'Boogaloo', san-serif;
+h1 {
+  width: 100vw;
+  height: 10vh;
   color: #ff8a2b;
-  text-align: center; 
-  font-size: 70px;
+  text-align: center;
+  position: absolute;
+  top: -40px;
 }
+
 
 .center {
 	margin: 20px auto;
@@ -23,17 +28,8 @@ body {
   top: 150px;
 }
 
-@media screen and (max-width: 900px) {
-  .name {
-  font-size: 40px;
-  }
-  
-@media screen and (max-width: 900px) {
-  .center {
-  margin: 10px auto;
-  position: absolute;
-  top: 15%;  
-  } 
+
+
 
 .plyr__video-embed iframe {
 	top: -50%;
@@ -68,4 +64,3 @@ p {
   p {
   font-size: 10px;   
   } 
-  

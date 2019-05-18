@@ -1,4 +1,4 @@
-// https://cdn.plyr.io/3.3.12/plyr.js
+
 
 const player = new Plyr( '#player' , {
   
