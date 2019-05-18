@@ -1,61 +1,71 @@
-
-
+/* https://cdn.plyr.io/3.3.12/plyr.css */
 body {
-    font-family: 'Boogaloo', san-serif;
-    font-size: 50px;
-    background-image: url("https://images6.alphacoders.com/327/thumb-1920-327182.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh
+  background-image: url("https://raw.githubusercontent.com/sukhleenbolina/movie-trailer/master/assets/lorax_background.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.name {
+  font-family: 'Boogaloo', san-serif;
+  color: #ff8a2b;
+  text-align: center; 
+  font-size: 70px;
+}
+
+.center {
+	margin: 20px auto;
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top: 150px;
+}
+
+@media screen and (max-width: 900px) {
+  .name {
+  font-size: 40px;
   }
   
-  h1 {
-    width: 100vw;
-    height: 10vh;
-    color: #f28e41;
-    text-align: center;
-  }
-  
+@media screen and (max-width: 900px) {
   .center {
-    margin: 0 auto; width: 800px;
-  }
+  margin: 10px auto;
+  position: absolute;
+  top: 15%;  
+  } 
+
+.plyr__video-embed iframe {
+	top: -50%;
+	height: 200%;
+}
+
+.plyr__control{
+  color: #6ba3ff;
+}
+
+.plyr--full-ui input[type="range"] {
+  color: orange;
+}
+
+
+h3 {
+  font-family: 'Boogaloo', san-serif;
+}
+
+p {
+  font-family: 'Open Sans', san-serif;
+  font-size: 16px;
+  width: 42%;
+}
+
+@media screen and (max-width: 900px) {
+  .h3 {
+  font-size: 16px;   
+  }   
   
+  @media screen and (max-width: 900px) {
+  p {
+  font-size: 10px;   
+  } 
   
-  video {
-    max-width: 800px;
-    box-shadow: 2px 2px 4px 5px #000;
-  }
-  
-  
-  .trees {
-  animation: slideIn .8s linear;
-  }
-  
-  
-  @keyframe slideIn {
-    0% {transform: translateY(400px);
-    animation-timing-function: ease-out;
-    }
-    60% {transform: translateY(-50px);
-    animation-timing-function: ease-in;
-    }
-    80% {transform: translateY(10px);
-    animation-timing-function: ease-out;
-    }
-    100% {transform: translateY(0px);
-    animation-timing-function: ease-in;
-    }
-  }
-  
-  .characters {
-    display: flex;
-    position: absolute;
-    bottom: -500px;
-  }
-  
-  #ted, #lorax, #audrey, #gma, #onceler, #ohare {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-color: white;
-  }
