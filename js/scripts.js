@@ -1,11 +1,17 @@
+const player = new Plyr( 'video' , {
+  
+  controls : ['play', 'progress', 'fullscreen', 'volume', 'current-time',],
+  muted: false,
+
+});
 
 
-const player = new Plyr( '#player' , {
-  
-    controls : ['play', 'progress', 'fullscreen', 'volume', 'current-time',],
-    muted: false,
-  
-  });
-  
-  
-  
+window.player = player;
+
+let date = new Date();
+let currentYear = date.getFullYear(); 
+
+console.log( currentYear );
+console.log( date);
+
+$('footer p span').text(  currentYear );
