@@ -33,6 +33,10 @@ video {
   background: opacity 0
 }
 
+.plyr--video {
+  background: #0000
+}
+
 .plyr__controls{
   width: 50%;
   text-align: center;
