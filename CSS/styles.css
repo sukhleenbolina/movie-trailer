@@ -4,13 +4,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(autofit, 4, 1fr);
 }
+
 h3 {
   font-family: 'Boogaloo', san-serif;
   color: #ff8a2b;
   text-align: center;
   font-size: 6vw;
   margin: 0%;
+  grid-column: 4 / 5;
 }
 
 video {
@@ -18,26 +23,18 @@ video {
 }
 
 .plyr__video-wrapper{
-  width: 55%;
+  width: 50%;
   text-align: center;
 	margin: 0 auto;
 	display: block;
 }
-
-@media only screen and (max-width: 600px) {
-  .plyr__video-wrapper {
-  width: 90%;
-  }
-}
-
-
 
 .plyr--video .plyr__controls {
   background: opacity 0
 }
 
 .plyr__controls{
-  width: 55%;
+  width: 50%;
   text-align: center;
 	margin: 0 auto;
 }
@@ -46,63 +43,39 @@ video {
   color: orange;
 }
 
-.stack {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 .information {
-  width: 55%;
-  text-align: center;
-	margin: 0 auto;
-	display: block;
-  display: inline-flex;
-  width: 30%;
-  flex-direction: row;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 1rem;
+  
 }
 
-#characters {
-  margin: 2rem 1rem;
-  width: 40vh;
-  height: 40vh;
-  background-color: black;
+.title {
+   grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: flex-end;
+ 
 }
 
-#summary{
-  margin: 2rem 1rem;
-  width: 40vh;
-  height: 40vh;
-}
-
-#summary h3 {
-  text-align: left;
-  font-size: 3vw;
-}
-
-#summary p {
-  text-align: left;
-  font-family: 'Open Sans', san-serif;
-}
-
-#summary p span {
-  font-family: 'Boogaloo', san-serif;
-  font-size: 1vw;
-  color: #ff8a2b;
-}
 
 .characters{
+  padding: 0rem 1rem;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
   display: grid;
 
  
-  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
   grid-column-gap: 15px;
  
-  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
   grid-row-gap: 5px;
 } 
+
 
 #ted {
   background: url('https://raw.githubusercontent.com/sukhleenbolina/movie-trailer/master/assets/ted.png');
@@ -326,12 +299,46 @@ video {
 }
 
 
+
+.info {
+  padding: 2.5rem;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+
+h6 {
+  color: #ffffff;
+  font-family: 'Boogaloo', san-serif;
+  font-size: 140%;
+  margin: 0 auto;
+}
+
+
+
+#summary {
+  font-size: 12px;
+  font-family: 'Open Sans', san-serif;
+  height: 200px;
+  width: 180px;
+}
+
+span {
+  color: #ffffff;
+  font-family: 'Boogaloo', san-serif;
+  font-size: 16px;
+}
+
+
 footer {
+  padding: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
 footer p span {
+  grid-column: 1 / 2;
+   grid-row: 2 / 5 ;
  font-weight: bold; 
 }

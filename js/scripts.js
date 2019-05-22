@@ -2,7 +2,7 @@ const player = new Plyr( 'video' , {
   
   controls : ['play', 'progress', 'fullscreen', 'volume', 'current-time',],
   muted: false,
-
+  clickToPlay : ['true'],
 });
 
 
